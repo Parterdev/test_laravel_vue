@@ -26,8 +26,8 @@ class ProductRequest extends FormRequest
         return [
             //Validamos por lado de servidor
             'name' => 'required',
-            "code" => 'required|unique:products',
-            "slug" => 'required|unique:products',
+            "code" => 'required',
+            "slug" => 'required',
         ];
     }
 }

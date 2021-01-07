@@ -45,7 +45,7 @@ class ProductController extends Controller
     public function update(ProductRequest $request, Product $product)
     {
         //Actualizamos el record validado
-        $this->product->update($request->validated());
+        $product->update($request->validated());
         $product->save();
 
         return $product;
